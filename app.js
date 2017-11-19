@@ -11,6 +11,7 @@ $.fn.create_line = function(text){
 };
 
 $(function() {
+    $('#root').append($('<p>').text("WHUYYYY"))
     var list = $('<ul>');
     var elt = $('<li>');
     elt.create_line('"Сделать задание #3 по web-программированию"');
