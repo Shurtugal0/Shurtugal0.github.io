@@ -1,5 +1,5 @@
 $.fn.create_line = function(text){
-    this.append($('<span>')).text(text);
+    this.append($('<span>').text(text));
     var delete_button = $('<input>').attr({
         type: 'button',
         value: 'Удалить'
