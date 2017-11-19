@@ -1,9 +1,6 @@
 $.fn.create_line = function(text){
     this.append($('<span>').text(text));
-    var delete_button = $('<input>').attr({
-        type: 'button',
-        value: 'Удалить'
-    });
+    var delete_button = $('<button>').text('Удалить');
     $(delete_button).click(function(){
         $(this).closest('li').remove();
     });
@@ -18,11 +15,8 @@ $(function() {
         type: 'text',
         id: 'add_task_input'
     });
-    var add_button = $('<input>').attr({
-        type: 'button',
-        id: 'add_task',
-        value: 'Добавить'
-    });
+    var add_button = $('<button>').attr({id: 'add_task'});
+    add_button.text('Добавить');
     $(add_button).click(function() {
         var add = $('<li>');
         add.create_line($('#add_task_input').val());
