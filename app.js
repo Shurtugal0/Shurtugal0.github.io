@@ -13,7 +13,7 @@ $.fn.create_line = function(text){
 $(function() {
     var list = $('<ul>');
     var elt = $('<li>');
-    elt.create_line('Сделать задание #3 по web-программированию');
+    elt.create_line('"Сделать задание #3 по web-программированию"');
     var input = $('<input>').attr({
         type: 'text',
         id: 'add_task_input'
